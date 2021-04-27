@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button,Form,Navbar,Nav,FormControl,Card} from 'react-bootstrap';
+import {Button,Form,Navbar,Nav,FormControl,Card, Container} from 'react-bootstrap';
 function App() {
   return (
+    <container className="bod">
     <div className="App">
       <>
-  <Navbar bg="dark" variant="dark">
+  <Navbar className="nav" bg="dark" variant="dark">
     <Nav className="mr-auto">
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#features">Subjects</Nav.Link>
@@ -36,7 +37,7 @@ Sign up for or restore account access</p>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
     <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
+    <Form.Text className="text-muted" color="#dce0e7">
       We'll never share your email with anyone else.
     </Form.Text>
   </Form.Group>
@@ -54,6 +55,7 @@ Sign up for or restore account access</p>
 </Form>
 
 </div>
+</container>
   );
 }
 
